@@ -32,6 +32,7 @@ const addNewNote = (text = "") => {
   const textArea = note.querySelector("textarea");
   deleteBtn.addEventListener("click", () => {
     note.remove();
+    updateLocalStorageData();
   });
 
   //   //   toggle using  the edit button
